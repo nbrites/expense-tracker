@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Expense Tracker</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-fixed-top">
+      <span class="navbar-brand"><i class="fa fa-line-chart" aria-hidden="true"></i> Expense Tracker</span>
+      <ul class="nav navbar-nav pull-right">
+        <li class="nav-item">
+          <a class="nav-link <%= 'active' if @currentTab == 'dashboard' %>" href="/">
+            <i class="fa fa-bar-chart"></i> Dashboard
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <%= 'active' if @currentTab == 'expenses' %>" href="/expenses">
+            <i class="fa fa-money"></i> Expenses
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container-fluid">
+      <%= yield %>
+    </div>
+  </body>
+</html>

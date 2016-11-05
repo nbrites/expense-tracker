@@ -1,0 +1,94 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require bootstrap-datepicker3
+ *= require bootstrap-select
+ */
+
+/* Palette */
+$darkgreen: #558C89;
+$lightgreen: #74AFAD;
+$orange: #D9853B;
+$lightgrey: #ECECEA;
+
+$textcolor: #55595c;
+
+$brand-primary: $orange;
+$body-bg:    $lightgreen;
+$body-color: $lightgrey;
+$link-color: $lightgrey;
+$table-bg: #FFFFFF;
+
+@import "bootstrap";
+@import "font-awesome";
+
+body { padding-top: 5rem; }
+
+html.turbolinks-progress-bar::before {
+  background-color: #FFFFFF !important;
+  height: 5px !important;
+}
+
+/* Table */
+.table {
+  color: $textcolor;
+}
+
+table{
+    border: 1px solid black;
+    table-layout: fixed;
+    width: 200px;
+}
+
+th, td {
+    border: 1px solid black;
+    width: 100px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: $darkgreen;
+}
+
+.nav-link {
+  padding: .25rem 0;
+  font-weight: bold;
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  border-bottom-color: rgba(255,255,255,.25);
+}
+
+.active {
+  color: #fff;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+
+/* Dropdowns */
+.dropdown-toggle {
+    background-color: #FFF !important;
+    color: $textcolor;
+    border: 1px solid #ccc;
+}
+
+.dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    line-height: 1.5;
+    color: $textcolor;
+    white-space: nowrap;
+}

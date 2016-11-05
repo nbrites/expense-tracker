@@ -1,0 +1,20 @@
+<%# app/views/dashboard/dashboard.html.erb %>
+
+<div class="row m-b-1">
+	<%= react_component 'ChartWidget', {
+		id: 'barChart',
+		title: 'Expenses Per Month (current year)',
+		chartType: 'bar',
+		chartData: get_income_expenses_per_month,
+		# chartShowScale: true,
+		cssClass: 'col-sm-6'
+		} %>
+	<%= react_component 'ChartWidget', {
+		id: 'pieChart',
+		title: 'Expenses Per Category',
+		chartType: 'pie',
+		chartData: get_expenses_per_category,
+		# chartShowScale: false,
+		cssClass: 'col-sm-6'
+		} %>
+</div>

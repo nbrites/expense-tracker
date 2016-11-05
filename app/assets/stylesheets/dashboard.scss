@@ -1,0 +1,32 @@
+// Place all the styles related to the dashboard controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.card {
+    position: relative;
+    border-radius: 3px;
+    background-color: #FFF !important;
+    color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0,0,0,.12);
+    margin-bottom: 8px;
+}
+
+.card .card-header {
+    background-color: #FFF;
+    padding: 10px 15px 10px 15px;
+    margin: 0;
+}
+
+.card .card-heading > .card-title {
+    margin-bottom: 0 !important;
+    font-size: 16px;
+}
+
+.card .card-body {
+    position: relative;
+    padding: 15px;
+}
+
+.chart-widget {
+    max-height: 300px;
+}
