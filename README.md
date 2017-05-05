@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/nbrites/expense-tracker.svg?branch=develop)](https://travis-ci.org/nbrites/expense-tracker)
-[![Build Status](https://travis-ci.org/nbrites/expense-tracker.svg?branch=master)](https://travis-ci.org/nbrites/expense-tracker)
+develop [![Build Status](https://travis-ci.org/nbrites/expense-tracker.svg?branch=develop)](https://travis-ci.org/nbrites/expense-tracker)  
+master [![Build Status](https://travis-ci.org/nbrites/expense-tracker.svg?branch=master)](https://travis-ci.org/nbrites/expense-tracker)
 
 # expense-tracker
 
