@@ -1,3 +1,7 @@
 language: ruby
 rvm:
   - 2.2.2
+install:
+  bundle install
+script:
+  echo 'TODO - implement tests' 
